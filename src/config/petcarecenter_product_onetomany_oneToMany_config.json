@@ -1,0 +1,257 @@
+{
+
+"petcarecenter": [
+    {
+        "key": "PcId",
+        "type": "keyid",
+        "UIComponentTitle": "PetCareCenter"
+    }
+    
+
+
+    ,{
+        "key": "Address",
+        "label": "Address",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Name",
+        "label": "Name",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Description",
+        "label": "Description",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "BranchName",
+        "label": "BranchName",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Latitude",
+        "label": "Latitude",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "Longitude",
+        "label": "Longitude",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "Pincode",
+        "label": "Pincode",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isNumber"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "IsOperational",
+        "label": "IsOperational",
+        "type": "check",
+        "editable": true,
+        "validators": [
+             "isTruthy"
+        ]
+                            }
+    ,{
+        "key": "NearbyLocation",
+        "label": "NearbyLocation",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Logo",
+        "label": "Logo",
+        "type": "doc",
+        "accept": ".JPG,.JPEG,.PNG",
+        "width": "30%",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "PetCareCenterSupervisor",
+        "label": "Supervisor",
+        "type": "dropdown",
+        "valueId": "MId",
+        "nameId": "FullName",
+        "contentId": "FullName",
+        "source": "Manager",
+        "uicomponent": "managersupervisor",
+        "create": true,
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+]
+
+,"petserviceservices": [
+    {
+        "key": "ServiceId",
+        "type": "keyid",
+        "UIComponentTitle": "PetService",
+        "child": true,
+        "parent": "petservice",
+        "property": "Services",
+        "values": []
+    }
+
+    ,{
+        "key": "ServiceType",
+        "label": "ServiceType",
+        "type": "dropdown",
+        "valueId": "Value",
+        "nameId": "Name",
+        "contentId": "Name",
+        "source": "PetServiceType",
+        "editable": true,
+        "validators": [
+             "isNumber"
+        ]
+                            }
+    ,{
+        "key": "Price",
+        "label": "Price",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isFloat"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "DogSize",
+        "label": "DogSize",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "ServiceAt",
+        "label": "ServiceAt",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "DurationInDays",
+        "label": "DurationInDays",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isNumber"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "DurationInHours",
+        "label": "DurationInHours",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isNumber"
+, "isPositive"
+        ]
+                            }
+    ,{
+        "key": "OnlineBookingAllowed",
+        "label": "OnlineBookingAllowed",
+        "type": "check",
+        "editable": true,
+        "validators": [
+             "isTruthy"
+        ]
+                            }
+    ,{
+        "key": "AdvPaymentReqd",
+        "label": "AdvPaymentReqd",
+        "type": "check",
+        "editable": true,
+        "validators": [
+             "isTruthy"
+        ]
+                            }
+]
+
+,"managersupervisor": [
+    {
+        "key": "MId",
+        "type": "keyid",
+        "UIComponentTitle": "Manager"
+    }
+
+    ,{
+        "key": "FullName",
+        "label": "FullName",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "ContactNumber",
+        "label": "ContactNumber",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Address",
+        "label": "Address",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "SecondaryContactNumber",
+        "label": "SecondaryContactNumber",
+        "type": "text",
+        "editable": true,
+        "validators": [
+                    ]
+                            }
+    ,{
+        "key": "Pincode",
+        "label": "Pincode",
+        "type": "text",
+        "editable": true,
+        "validators": [
+             "isNumber"
+, "isPositive"
+        ]
+                            }
+]
+}

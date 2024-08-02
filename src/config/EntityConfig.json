@@ -1,0 +1,555 @@
+{
+        "petservice": [
+                        {
+                            "key": "ServiceId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "ServiceType",
+                            "label": "ServiceType",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Model.PetServiceType",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "ServiceType is required"
+                            ]
+                        },
+                        {
+                            "key": "Price",
+                            "label": "Price",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Decimal",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Price is required"
+                            ]
+                        },
+                        {
+                            "key": "DogSize",
+                            "label": "DogSize",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "DogSize is required"
+                            ]
+                        },
+                        {
+                            "key": "ServiceAt",
+                            "label": "ServiceAt",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ServiceAt is required"
+                            ]
+                        },
+                        {
+                            "key": "DurationInDays",
+                            "label": "DurationInDays",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int32",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "DurationInDays is required"
+                            ]
+                        },
+                        {
+                            "key": "DurationInHours",
+                            "label": "DurationInHours",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int32",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "DurationInHours is required"
+                            ]
+                        },
+                                                {
+                            "key": "OnlineBookingAllowed",
+                            "label": "OnlineBookingAllowed",
+                            "type": "check",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "OnlineBookingAllowed is required"
+                            ]
+                        },
+                                                {
+                            "key": "AdvPaymentReqd",
+                            "label": "AdvPaymentReqd",
+                            "type": "check",
+                                "editable": true,
+                                "validators": [
+                                    "required"
+                                ],
+                                "validationMessages": [
+                                    "AdvPaymentReqd is required"
+                                ]
+                            }
+        ]
+,        "petowner": [
+                        {
+                            "key": "OwnerId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "OwnerName",
+                            "label": "OwnerName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "OwnerName is required"
+                            ]
+                        },
+                        {
+                            "key": "ContactPrimary",
+                            "label": "ContactPrimary",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ContactPrimary is required"
+                            ]
+                        },
+                        {
+                            "key": "ContactSecondary",
+                            "label": "ContactSecondary",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ContactSecondary is required"
+                            ]
+                        },
+                        {
+                            "key": "Address",
+                            "label": "Address",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Address is required"
+                            ]
+                        },
+                        {
+                            "key": "Pincode",
+                            "label": "Pincode",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Pincode is required"
+                            ]
+                        },
+                    {
+                        "key": "PetOwnerPets",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "petcarecenter": [
+                        {
+                            "key": "PcId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "Address",
+                            "label": "Address",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Address is required"
+                            ]
+                        },
+                        {
+                            "key": "Name",
+                            "label": "Name",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Name is required"
+                            ]
+                        },
+                        {
+                            "key": "Description",
+                            "label": "Description",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Description is required"
+                            ]
+                        },
+                        {
+                            "key": "BranchName",
+                            "label": "BranchName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "BranchName is required"
+                            ]
+                        },
+                        {
+                            "key": "Latitude",
+                            "label": "Latitude",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Single",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Latitude is required"
+                            ]
+                        },
+                        {
+                            "key": "Longitude",
+                            "label": "Longitude",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Single",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Longitude is required"
+                            ]
+                        },
+                        {
+                            "key": "Pincode",
+                            "label": "Pincode",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Int32",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Pincode is required"
+                            ]
+                        },
+                                                {
+                            "key": "IsOperational",
+                            "label": "IsOperational",
+                            "type": "check",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "IsOperational is required"
+                            ]
+                        },
+                        {
+                            "key": "BusinessHours",
+                            "label": "BusinessHours",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "BusinessHours is required"
+                            ]
+                        },
+                        {
+                            "key": "NearbyLocation",
+                            "label": "NearbyLocation",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "NearbyLocation is required"
+                            ]
+                        },
+                    {
+                        "key": "PetCareCenterLogo",
+                        "type": "keyid"
+                    },
+                    {
+                        "key": "Logo",
+                        "label": "Logo",
+                        "width": "30%",
+                        "type": "doc",
+                        "accept": ".JPG,.JPEG,.PNG",
+                        "editable": true,
+                        "validators": [
+                            "required"
+                        ],
+                        "validationMessages": [
+                            "PetCareCenter Logo is required"
+                        ]
+                    },
+                                    {
+                        "key": "PetCareCenterImages",
+                        "type": "keyid"
+                    },
+                    {
+                        "key": "Images",
+                        "label": "Images",
+                        "width": "30%",
+                        "type": "doc",
+                        "accept": ".JPG,.JPEG,.PNG",
+                        "editable": true,
+                        "multiple": true,
+                        "validators": [
+                            "required"
+                        ],
+                        "validationMessages": [
+                            "PetCareCenter Images is required"
+                        ]
+                    },
+                                    {
+                        "key": "PetCareCenterServices",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "PetCareCenterPets",
+                        "type": "keyid"
+                    },
+                                    {
+                        "key": "PetCareCenterSupervisor",
+                        "type": "keyid"
+                    }  
+                        ]
+,        "manager": [
+                        {
+                            "key": "MId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "FullName",
+                            "label": "FullName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "FullName is required"
+                            ]
+                        },
+                        {
+                            "key": "ContactNumber",
+                            "label": "ContactNumber",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "ContactNumber is required"
+                            ]
+                        },
+                        {
+                            "key": "Address",
+                            "label": "Address",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Address is required"
+                            ]
+                        },
+                        {
+                            "key": "SecondaryContactNumber",
+                            "label": "SecondaryContactNumber",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "SecondaryContactNumber is required"
+                            ]
+                        },
+                        {
+                            "key": "Pincode",
+                            "label": "Pincode",
+                            "type": "dropdown",
+                                "valueId": "Value",
+                                "nameId": "Name",
+                                "contentId": "Name",
+                                "source": "Edm.Int32",
+                                "editable": true,
+                                "validators": [
+                                    "required",
+                                    "isNumber"
+                                ],
+                                "validationMessages": [
+                                    "Pincode is required"
+                                ]
+                            }
+        ]
+,        "pet": [
+                        {
+                            "key": "PetId",
+                            "type": "keyid"
+                        },
+                        {
+                            "key": "PetName",
+                            "label": "PetName",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "PetName is required"
+                            ]
+                        },
+                        {
+                            "key": "Breed",
+                            "label": "Breed",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Breed is required"
+                            ]
+                        },
+                        {
+                            "key": "AnimalType",
+                            "label": "AnimalType",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "AnimalType is required"
+                            ]
+                        },
+                        {
+                            "key": "Gender",
+                            "label": "Gender",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Gender is required"
+                            ]
+                        },
+                        {
+                            "key": "Color",
+                            "label": "Color",
+                            "type": "text",
+                            "editable": true,
+                            "validators": [
+                                "required"
+                            ],
+                            "validationMessages": [
+                                "Color is required"
+                            ]
+                        },
+                        {
+                            "key": "Weight",
+                            "label": "Weight",
+                            "type": "dropdown",
+                            "valueId": "Value",
+                            "nameId": "Name",
+                            "contentId": "Name",
+                            "source": "Edm.Decimal",
+                            "editable": true,
+                            "validators": [
+                                "required",
+                                "isNumber"
+                            ],
+                            "validationMessages": [
+                                "Weight is required"
+                            ]
+                        },
+                        {
+                            "key": "Height",
+                            "label": "Height",
+                            "type": "dropdown",
+                                "valueId": "Value",
+                                "nameId": "Name",
+                                "contentId": "Name",
+                                "source": "Edm.Decimal",
+                                "editable": true,
+                                "validators": [
+                                    "required",
+                                    "isNumber"
+                                ],
+                                "validationMessages": [
+                                    "Height is required"
+                                ]
+                            }
+        ]
+}
